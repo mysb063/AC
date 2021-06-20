@@ -1,0 +1,121 @@
+body{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*header*/
+#header {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#header .title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+#header .title img {
+  max-width: 3em;
+}
+#header .title h1 {
+  padding-left: 0.5em;
+  margin: 10px 0;
+}
+#header .score {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin: 0;
+  color: #2e8b57;
+}
+#header .tried {
+  margin-top: 5px;
+}
+
+/*cards*/
+#cards {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  border: solid 2px #efefef;
+  /*容器內的排版*/
+  flex: 6.874% 0 1;
+  height: 8vw;
+  margin: 2px;
+  /*卡片內的排版*/
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card svg {
+  max-width: 30%;
+  align-self: center;
+}
+.card p {
+  margin: 3px;
+  font-size: 10px;
+  font-weight: bold;
+}
+.card p:last-child {
+  transform: rotate(180deg);
+}
+div[data-color="1"] p,
+div[data-color="2"] p{
+color: rgb(214, 0, 0);
+}
+
+div[data-color="1"] svg,
+div[data-color="2"] svg{
+fill: rgb(214, 0, 0);
+}
+.back {
+  background: url("https://assets-lighthouse.alphacamp.co/uploads/image/file/9222/ExportedContentImage_00.png");
+  background-size: cover;
+}
+.paired {
+  background-color: #ccc;
+}
+
+.wrong {
+  animation: wrongAnimation 0.5s;
+  animation-iteration-count: 2;
+}
+@keyframes wrongAnimation {
+  0% {
+    border: solid 2px #efefef;
+  }
+  100% {
+    border: solid 2px rgb(255, 238, 0);
+  }
+}
+
+/*Completed*/
+.completed{
+    position: absolute;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #456e57c9;
+    border-top: solid 10px #fff ;
+    border-bottom: solid 10px #fff ;
+    top: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+    color: #fff;
+}
+
+.completed h3{
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+
