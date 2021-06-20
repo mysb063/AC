@@ -1,0 +1,61 @@
+svg#finder {
+  width: 150px;
+}
+.navbar {
+  padding: 0;
+  margin-top: 10px;
+}
+.nav-link {
+  display: flex;
+  padding: 0;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.myfriends {
+  flex-direction: row-reverse;
+}
+.nav-link i,
+.nav-link span {
+  display: inline-block;
+  margin: 0 2px;
+}
+.nav-link i {
+  font-size: 1.25rem;
+  color: #999;
+}
+.nav-link span {
+  font-size: 0.5rem;
+  color: #fff;
+}
+.btn{
+    z-index: 2;
+}
+i.fas.fa-mars,
+i.fas.fa-venus {
+  margin-right: 5px;
+  font-size: 1.5rem;
+}
+
+.modal-footer i.fas.fa-heart{
+    position: relative;
+    color: #ff2142;
+    z-index: -1;
+}
+
+#userName {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.modal-footer {
+    padding: 0;
+    justify-content: space-between;
+}
+
+.page-link {
+    color: #999;
+}
+.page-link:hover {
+    background-color: #999;
+    color: #fff;
+}
